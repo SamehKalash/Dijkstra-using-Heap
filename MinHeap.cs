@@ -22,7 +22,7 @@ namespace Short_Path_Dj
                 return heap.Count;
             }
         }
-        public void Add(X value) //Add Method
+        public void Add(X value)
         {
             heap.Add(value);
             HeapUp();
@@ -48,7 +48,7 @@ namespace Short_Path_Dj
             }
         }
 
-        public X GetMin() //Deletion
+        public X GetMin() 
         {
             if (heap.Count == 0)
                 throw new InvalidOperationException("Error: Heap is empty");
@@ -65,11 +65,11 @@ namespace Short_Path_Dj
 
         public void HeapDown()
         {
-            int cIndex = 0;
+            int cIndex = 0; 
             while(true)
             {
                 int smallIndex = cIndex;
-                int leftChildIndex = (smallIndex * 2) + 1;
+                int leftChildIndex = (smallIndex * 2) + 1; 
                 int rightChildIndex = (smallIndex * 2) + 2;
 
                 if (leftChildIndex < heap.Count && heap[smallIndex].CompareTo(heap[leftChildIndex])>0)

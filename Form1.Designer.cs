@@ -186,7 +186,7 @@ namespace Short_Path_Dj
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Advanced Programming - Shortest Path Using Min Heaps (Project) GUI ";
+            this.Text = "Dijkstra Shortest Path";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseClick);
             this.adjmatrix1.ResumeLayout(false);
